@@ -1,5 +1,4 @@
 import {render, screen} from '@testing-library/react'
-import userEvent from '@testing-library/user-event'
 import App from './App'
 
 describe('Testing App Component', () => {
@@ -22,5 +21,10 @@ describe('Testing App Component', () => {
     expect(screen.getByRole('alert')).toBeInTheDocument()
     expect(console.error).toHaveBeenCalled()
     expect(console.error).toHaveBeenCalledTimes(4)
+  })
+
+  it('should render correctly', () => {
+    const {container} = render(<App />)
+    expect(container).toMatchSnapshot()
   })
 })

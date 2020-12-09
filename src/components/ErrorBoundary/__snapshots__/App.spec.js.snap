@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing App Component should render correctly 1`] = `
+<div>
+  <div
+    role="alert"
+  >
+    <p>
+      Something went wrong:
+    </p>
+    <pre
+      style="color: red;"
+    >
+      TypeError
+       : 
+      Cannot read property 'toUpperCase' of undefined
+    </pre>
+  </div>
+</div>
+`;
