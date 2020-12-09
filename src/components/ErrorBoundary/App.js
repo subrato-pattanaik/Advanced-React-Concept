@@ -1,5 +1,5 @@
 import * as React from 'react'
-import {ErrorBoundary} from 'react-error-boundary'
+import {ErrorBoundary as ReactErrorBoundary} from 'react-error-boundary'
 
 function ErrorFallback({error}) {
   return (
@@ -17,10 +17,10 @@ function Farewell({subject}) {
 }
 function App() {
   return (
-    <ErrorBoundary FallbackComponent={ErrorFallback}>
+    <ReactErrorBoundary FallbackComponent={ErrorFallback}>
       <Greeting />
       <Farewell />
-    </ErrorBoundary>
+    </ReactErrorBoundary>
   )
 }
 
