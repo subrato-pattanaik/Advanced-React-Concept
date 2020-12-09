@@ -2,7 +2,6 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import ErrorRecovery from './components/ErrorBoundary/ErrorRecovery'
 //import App from './components/ErrorBoundary/App'
-import reportWebVitals from './reportWebVitals'
 
 ReactDOM.render(<ErrorRecovery />, document.getElementById('root'))
 
