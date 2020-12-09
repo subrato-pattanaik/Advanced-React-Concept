@@ -5,7 +5,9 @@ function ErrorFallback({error}) {
   return (
     <div role="alert">
       <p>Something went wrong:</p>
-      <pre style={{color: 'red'}}>{error.message}</pre>
+      <pre style={{color: 'red'}}>
+        {error.name} : {error.message}
+      </pre>
     </div>
   )
 }
